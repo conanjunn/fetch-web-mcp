@@ -45,7 +45,17 @@ npm start
 
 ### 2. 在 Claude Code 中配置
 
-编辑 Claude Code 的配置文件 `~/.claude/config.json` 或使用 Claude Code 的 MCP 配置界面，添加以下配置：
+#### 方法一：使用 claude mcp add 命令（推荐）
+
+```bash
+claude mcp add fetch node /your/path/mcp-fetch/index.js
+```
+
+**注意：** 将路径替换为你的实际安装路径。此命令会自动添加配置到 `~/.claude/config.json`。
+
+#### 方法二：手动编辑配置文件
+
+编辑 Claude Code 的配置文件 `~/.claude/config.json`，添加以下配置：
 
 ```json
 {
